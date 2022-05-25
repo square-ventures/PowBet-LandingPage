@@ -28,6 +28,15 @@ picture {
   display: block;
 }
 
+.logo
+{
+  position: absolute;
+  top:60px;
+  left: 50%;
+  right: 50%;
+    transform: translate(-50%, -50%); 
+}
+
 .wrapper {
   padding: 21px;
   display: -webkit-box;
@@ -48,8 +57,15 @@ picture {
   .wrapper
   {
     justify-content: center;
-    padding-top: 14vh;
+    padding-top: 16vh;
   }
+
+  .logo
+{
+ 
+  top:280px;
+
+}
 }
 
 .logo {
@@ -57,10 +73,7 @@ picture {
 }
 
 @media (min-width: 700px) and (orientation: portrait) {
-  .logo {
-    width: 232px;
-    height: 64px;
-  }
+  
 
   body {
     background-image: url('assets/tablet/Background-portrait.jpg');
@@ -95,23 +108,7 @@ picture {
   }
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {
-  .logo {
-    width: 232px;
-    height: 64px;
-    margin-right: 20px;
-    margin-top: 43px;
-  }
-}
 
-@media (min-width: 1920px) {
-  .logo {
-    width: 311px;
-    height: 89px;
-    margin-right: 0px;
-    margin-top: 67px;
-  }
-}
 
 .main-area {
   display: -webkit-box;
@@ -128,7 +125,7 @@ picture {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 27px;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
