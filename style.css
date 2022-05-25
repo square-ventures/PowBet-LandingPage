@@ -14,6 +14,7 @@ body {
   text-rendering: optimizeSpeed;
   background-image: url('assets/mobile/Background-mobile.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 a:not([class]) {
@@ -41,6 +42,16 @@ picture {
   align-items: center;
 }
 
+
+@media (min-width:2000px) 
+{
+  .wrapper
+  {
+    justify-content: center;
+    padding-top: 14vh;
+  }
+}
+
 .logo {
   margin-top: 11px;
 }
@@ -66,11 +77,21 @@ picture {
   body {
     background-image: url('assets/tablet/Background-landscape.jpg');
   }
+
+   .terms-conditions
+  {
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 1920px) {
   body {
     background-image: url('assets/desktop/Background-desktop.jpg');
+  }
+
+  .terms-conditions
+  {
+    margin-right: 60px;
   }
 }
 
@@ -198,6 +219,11 @@ picture {
     width: 278px;
     height: 80px;
   }
+
+   .extra-width
+  {
+    width: 214px!important;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -208,6 +234,11 @@ picture {
     width: 278px;
     height: 80px;
   }
+
+  .extra-width
+  {
+    width: 208px!important;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -215,6 +246,11 @@ picture {
     width: 311px;
     height: 89px;
     right: 755px;
+  }
+
+   .extra-width
+  {
+    width: 290px!important;
   }
 }
 
